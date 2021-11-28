@@ -37,14 +37,13 @@ The data that we have is from Medicare Insurance. The answer between yes/no for 
 
 ![fraud2](https://user-images.githubusercontent.com/87089936/143789230-6842c75e-3496-4812-8729-a0b9efc3f7ec.png)
 
-![fraud5](https://user-images.githubusercontent.com/87089936/143789165-51243e50-0cd3-429a-908f-1f9dc3773d8b.png
+![fraud5](https://user-images.githubusercontent.com/87089936/143789165-51243e50-0cd3-429a-908f-1f9dc3773d8b.png)
 
 The impurity-based feature importance ranks the numerical features to be the most important features. As a result, the non-predictive random_num variable is ranked the second most important. Contrary to our hypothesis, the starting age of patients was ranked the most important feature to determine whether the claim is from a fraud or non-fraud provider. As expected, patient’s average annual deductible amount and claim’s amount reimbursed are important in identifying fraud/ non-fraud.
 
  <h2>Conclusion and Future Work:</h2>
 - We attempted to look at the most common diagnosis codes among claims of Fraud vs Non-fraud providers, and map it with ICD9/10 codes dictionary from the CMS to see potential outlier services on claims of Fraud providers. However, top 20 most frequent diagnosis codes are very similar among two groups (claims of Fraud vs. non Fraud providers):
 ![fraud6](https://user-images.githubusercontent.com/87089936/143789231-8498a92d-cd82-4ec4-9fc3-0be8f53f9538.PNG)
-)
 
 - For future work, we would like to use more Medicare claim data (i.e. Part D on Drug Coverage) to dive deeper into types of fraud including upcoding, provision of unnecessary procedures, and providing services with nurses and staff that should be provided by doctors. 
 - If we have more information on the physician’s specialty, type of procedures performed and drug prescribed, we can try to predict the expected medical specialty of a physician based on type and count of procedures performed, then compare it with his/her actual specialty. For example, if the model predicts a physician as a dermatologist but his/her actual specialty is optometrist, he or she might be performing procedures indicating fraud
