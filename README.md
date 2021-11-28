@@ -43,6 +43,7 @@ The impurity-based feature importance ranks the numerical features to be the mos
 
  <h2>Conclusion and Future Work:</h2>
 - We attempted to look at the most common diagnosis codes among claims of Fraud vs Non-fraud providers, and map it with ICD9/10 codes dictionary from the CMS to see potential outlier services on claims of Fraud providers. However, top 20 most frequent diagnosis codes are very similar among two groups (claims of Fraud vs. non Fraud providers):
+ 
 ![fraud6](https://user-images.githubusercontent.com/87089936/143789231-8498a92d-cd82-4ec4-9fc3-0be8f53f9538.PNG)
 
 - For future work, we would like to use more Medicare claim data (i.e. Part D on Drug Coverage) to dive deeper into types of fraud including upcoding, provision of unnecessary procedures, and providing services with nurses and staff that should be provided by doctors. 
